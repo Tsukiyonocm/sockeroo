@@ -1,0 +1,54 @@
+:root {
+    --primary-green: rgb(51, 204, 204);
+}
+
+body {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+div.container {
+    max-width: 75rem;
+}
+
+/** Navbar
+ ---------------------------------------------------------*/
+
+.navbar-nav a,
+.navbar-text {
+    color: #fff;
+    letter-spacing: 1.2;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav a:hover {
+    color: var(--primary-green);
+    transition: color 500ms;
+}
+
+.navbar-nav .active {
+    color: var(--primary-green);
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.navbar-nav .active:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid var(--primary-green);
+}
+
+.fa-twitter-square:hover,  
+.fa-facebook-square:hover, 
+.fa-linkedin:hover, 
+.fa-instagram:hover {
+    color: var(--primary-green);
+    cursor: pointer;
+}
