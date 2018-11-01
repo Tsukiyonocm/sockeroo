@@ -8,6 +8,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     background-color: rgb(46, 46, 46);
+    color: #fff;
 }
 
 /* div.container {
@@ -53,8 +54,42 @@ body {
 
 /** Background Video
  ---------------------------------------------------------*/
+/* #heroVideo {
+    position: relative;
+}
 
+.videoText{
+    position: absolute;
+    top: 60%;
+    left: 200px;
+} */
 
+ /* .textOverlay {
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 700;
+}
+
+button.btn-video {
+    background-color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+button.btn-video:hover {
+    background-color: var(--primary-green);
+} */
+
+.vert-center-text {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.vert-center-container {
+    position: relative;
+}
 
 /** Media Queries
  ---------------------------------------------------------*/
