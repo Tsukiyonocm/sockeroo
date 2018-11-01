@@ -10,9 +10,9 @@ body {
     background-color: rgb(46, 46, 46);
 }
 
-div.container {
+/* div.container {
     max-width: 75rem;
-}
+} */
 
 /** Navbar
  ---------------------------------------------------------*/
@@ -49,6 +49,10 @@ div.container {
     color: var(--primary-green);
     cursor: pointer;
 }
+
+
+/** Background Video
+ ---------------------------------------------------------*/
 
 
 
