@@ -7,13 +7,11 @@ body {
     font-style: normal;
     font-size: 1rem;
     font-weight: 400;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(22, 22, 22);
+    /* Background color matches video background color so ther is no seam on shrinking screens */
     color: #fff;
 }
 
-/* div.container {
-    max-width: 75rem;
-} */
 
 /** Navbar
  ---------------------------------------------------------*/
@@ -40,7 +38,9 @@ body {
     padding-bottom: 2px;
 }
 
-
+.navbar-custom {
+    background-color: rgba(22, 22, 22, 0.5);
+}
 
 
 .fa-twitter-square:hover,  
@@ -54,47 +54,43 @@ body {
 
 /** Background Video
  ---------------------------------------------------------*/
-/* #heroVideo {
+
+
+ video#bgvid {
+    display: none;
+}
+
+.mobile-images {
     position: relative;
 }
 
-.videoText{
+.header-image {
     position: absolute;
-    top: 60%;
-    left: 200px;
-} */
-
- /* .textOverlay {
-    font-family: futura-pt-condensed, sans-serif;
-    font-weight: 700;
-}
-
-button.btn-video {
-    background-color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-button.btn-video:hover {
-    background-color: var(--primary-green);
-} */
-
-.vert-center-text {
-    position: absolute;
-    top: 60%;
-    left: 0;
-    text-align: center;
+    top: 50%;
+    left: 50%;
     width: 100%;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
-.vert-center-container {
-    position: relative;
+
+#heroVideo {
+    background-color: rgb(23, 23, 23);
 }
 
 /** Media Queries
  ---------------------------------------------------------*/
-@media (min-width: 992px){
+ @media (min-width: 992px){
     
+
+    body {
+        /* Might only be needed temporarily, because of background image being used. */
+        background-color: rgb(34, 34, 34);
+    }
+
     .navbar-nav .active:before {
         content: "";
         position: absolute;
@@ -104,5 +100,27 @@ button.btn-video:hover {
         left: 25%;
         border-bottom: 2px solid var(--primary-green);
         
+    }
+
+    #heroVideo {
+        background-image: none;
+        background-color: transparent;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    video#bgvid {
+        position: fixed;
+        display: block;
+        top: 0%;
+        left: 0%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        overflow: hidden;
     }
 }

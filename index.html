@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BootStrap 4</title>
+    <title>Sockeroo</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -27,7 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="mainNavbar" class="collapse navbar-collapse mt-2 mt-lg-0">
+            <div id="mainNavbar" class="collapse navbar-collapse mt-2 mt-lg-0 navbar-custom">
                 <div class="main-navigation">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-2">
@@ -74,32 +74,20 @@
     </nav> <!-- End Nav-->
     
     <section id="heroVideo">
-        <!-- <div class="embed-responsive embed-responsive-16by9 container-fluid">
-            <video autoplay id="bgVideo" class="embed-responsive-item" src="assets/vid/Sockeroo_logoAni.mp4" allowfullscreen></video autoplay>
-        </div>
-        <div class="container videoText">
-            <div class="row justify-content-center">
-                <div class="col-md-6 text-center">
-                    <h1 class="textOverlay display-1 text-center">Greetings!</h1>
-                    <p class="lead text-center">We are a marketing firm but are typically recognized as a vital partner for client companies. We specialize in marketing strategy, execution, and content development/creation.</p>
-                    <button class="btn-video btn">Learn More</button>
-                </div>
-            </div> -->
+        <div class="row">
 
-            <div class="row">
-                <div class="col-xs-12 vert-center-container embed-responsive embed-responsive-16by9">
-                    <video autoplay class="img-responsive">
-                        <source src="assets/vid/Sockeroo_logoAni.mp4">
-                    </video>
-                    <div class="vert-center-text">
-                        <h1>Text is here</h1>
-                    </div>
-                </div>
+            <!-- Video plays on large screens -->
+            <div class="col-xs-12 vert-center-container embed-responsive embed-responsive-4by3">
+                <video id="bgvid" playsinline autoplay muted class="img-fluid" poster="assets/img/Image-placeholder.png">
+                    <source src="assets/vid/Sockeroo_logoAni_2.mp4">
+                </video>
+            </div>
+
+            <!-- For Mobile versions -->
+            <div class="text-center mobile-image">
+                <img src="assets/img/mobile-heading.png" alt="Company Name for Mobile" class="img-responsive mx-auto header-image">
             </div>
         </div>
-        
-
-        
     </section>
 
 
