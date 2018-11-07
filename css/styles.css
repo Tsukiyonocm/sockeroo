@@ -101,7 +101,7 @@ video#bgvid {
 }
 
 p.lead {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .button-heading {
@@ -119,7 +119,7 @@ p.lead {
     }
 
     p.lead {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -178,5 +178,7 @@ p.lead {
 
 /* Extra Large Devices */
 @media (min-width: 1200px){
-    
+    .text-overlay {
+        padding-top: 12rem;
+    }
 }
