@@ -80,25 +80,60 @@ video#bgvid {
 #heroVideo {
     background-color: rgb(23, 23, 23);
     height: 100vh;
+    position: relative;
 }
 
 .text-overlay {
     position: absolute;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;;
+    flex-direction: column;
+}
+
+.title {
+    font-family: futura-pt-condensed, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.2;
+}
+
+p.lead {
+    font-size: 1rem;
+}
+
+.button-heading {
+    font-weight: 600;
 }
 
 /** Media Queries
  ---------------------------------------------------------*/
- @media (min-width: 992px){
-    
 
+ /* Small Devices */
+@media (min-width: 576px){
+
+    .title {
+        font-size: 4.5rem;
+    }
+
+    p.lead {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Medium Devices */
+@media (min-width: 768px){
+    .title {
+        font-size: 5rem;
+    }
+}
+
+/* Large Devices */
+@media (min-width: 992px){
+    
     body {
         /* Might only be needed temporarily, because of background image being used. */
         background-color: rgb(34, 34, 34);
@@ -139,4 +174,9 @@ video#bgvid {
         z-index: -100;
         overflow: hidden;
     }
+}
+
+/* Extra Large Devices */
+@media (min-width: 1200px){
+    
 }
