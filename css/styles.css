@@ -81,6 +81,7 @@ video#bgvid {
     background-color: rgb(23, 23, 23);
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .text-overlay {
@@ -109,6 +110,44 @@ p.lead {
     font-weight: 600;
 }
 
+
+/** Services
+ ---------------------------------------------------------*/
+#ourServices {
+    background-color: #fff;
+}
+
+.embed-responsive #processVid {
+    height: auto;
+    overflow: hidden;
+}
+
+#processVid {
+    background-color: rgb(34, 34, 34);
+}
+
+ #ourServices div.container {
+    max-width: 75rem;
+}
+
+.services {
+    width: 4.5rem;
+}
+
+.service-item {
+    max-width: 5rem;
+}
+
+.service-icon {
+    height: 4.375rem;
+    width: auto;
+}
+
+.service-icon-text {  
+    color: #000;
+    text-transform: uppercase;
+    
+}
 
 
 /** Media Queries
