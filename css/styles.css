@@ -129,6 +129,10 @@ p.lead {
     .title {
         font-size: 5rem;
     }
+
+    .header-image {
+        top: 45%;
+    }
 }
 
 /* Large Devices */
