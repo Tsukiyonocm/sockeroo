@@ -66,7 +66,7 @@ video#bgvid {
 
 .header-image {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 100%;
     height: auto;
@@ -182,3 +182,8 @@ p.lead {
         padding-top: 12rem;
     }
 }
+
+
+/* Drop marketing logo on mobile to top:30 */
+/* On mobile then bring up the overlay a bit higher also to fill void */
+/* Ajust values for other versions */
