@@ -85,10 +85,11 @@ video#bgvid {
 
 .text-overlay {
     position: absolute;
-    top: 0;
+    top: 0%;
     right: 0;
     bottom: 0;
     left: 0;
+    
 
     flex-direction: column;
 }
@@ -107,6 +108,8 @@ p.lead {
 .button-heading {
     font-weight: 600;
 }
+
+
 
 /** Media Queries
  ---------------------------------------------------------*/
@@ -177,6 +180,10 @@ p.lead {
         height: auto;
         z-index: -100;
         overflow: hidden;
+    }
+
+    .text-overlay {
+        top: 20%;
     }
 }
 
