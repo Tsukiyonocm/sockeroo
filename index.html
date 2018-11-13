@@ -13,6 +13,9 @@
     <!-- Adobe TypeKit Font - Futura -->
     <link rel="stylesheet" href="https://use.typekit.net/fjt4fva.css">
 
+    <!-- Fullpage.js CSS -->
+    <link rel="stylesheet" href="css/fullpage.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -22,158 +25,186 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <img class="ml-2 ml-lg-0" src="assets/img/sockeroo_logo_sm.png" alt="Brand">
+    <div id="fullpage">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <img class="ml-2 ml-lg-0" src="assets/img/sockeroo_logo_sm.png" alt="Brand">
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div id="mainNavbar" class="collapse navbar-collapse mt-2 mt-lg-0 navbar-custom">
-                <div class="main-navigation">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Our Process</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link">Blog</a>
-                        </li>
-                    </ul>
+                <div id="mainNavbar" class="collapse navbar-collapse mt-2 mt-lg-0 navbar-custom">
+                    <div class="main-navigation">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link">Our Process</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a href="#" class="nav-link">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-nav social mx-2 ml-lg-auto">
+                        <span class="navbar-text mr-2">Follow Us</span>
+                        <ul class="navbar-nav align-items-lg-center flex-row">
+                            <li class="nav-link mr-2">
+                                <a href="#"><i class="fab fa-inverse fa-twitter-square"></i></a>
+                            </li>
+                            <li class="nav-link mr-2">
+                                <a href="#"><i class="fab fa-inverse fa-facebook-square"></i></a>
+                            </li>
+                            <li class="nav-link mr-2">
+                                <a href="#"><i class="fab fa-inverse fa-linkedin"></i></a>
+                            </li>
+                            <li class="nav-link mr-2">
+                                <a href="#"><i class="fab fa-inverse fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="navbar-nav social mx-2 ml-lg-auto">
-                    <span class="navbar-text mr-2">Follow Us</span>
-                    <ul class="navbar-nav align-items-lg-center flex-row">
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-twitter-square"></i></a>
-                        </li>
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-facebook-square"></i></a>
-                        </li>
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-linkedin"></i></a>
-                        </li>
-                        <li class="nav-link mr-2">
-                            <a href="#"><i class="fab fa-inverse fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div> <!-- End Container -->
-    </nav> <!-- End Nav-->
-
-    <section id="heroVideo">
-        <div class="row">
-
+            </div> <!-- End Container -->
+        </nav> <!-- End Nav-->
+    
+    
+        <section id="section0" class="section">
             <!-- Video plays on large screens -->
-            <div class="col-xs-12 vert-center-container embed-responsive embed-responsive-4by3">
-                <video id="bgvid" playsinline autoplay muted class="img-fluid">
-                    <source src="assets/vid/Sockeroo_logoAni_2.mp4">
-                </video>
-            </div>
+            <video id="bgvid" muted data-autoplay>
+                <source src="assets/vid/Sockeroo_logoAni_2.mp4">
+            </video>
+        </section>
 
-            <!-- For Mobile versions -->
-            <div class="text-center mobile-image">
-                <img src="assets/img/mobile-heading.png" alt="Company Name for Mobile" class="img-responsive mx-auto header-image">
-            </div>
-        </div>
-
-        <div class="text-overlay d-flex justify-content-end justify-content-lg-center align-items-center mt-lg-3">
-            <div class="row justify-content-center align-items-center text-center">
-                <div class="col-8 px-0 my-3 mb-lg-0 heading-text">
-                    <h1 class="title">Greetings!</h1>
-                    <p class="lead my-sm-3">We are a marketing firm but are typically recognized as a vital partner for
-                        client companies. We specialize in marketing strategy, execution, and content
-                        development/creation.</p>
-                    <button type="button" class="btn btn-light button-heading mb-sm-3 mb-lg-0" href="#">Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ourServices">
-        <div class="col-xs-12 vert-center-container embed-responsive embed-responsive-21by9 mt-0">
-            <video id="processVid" playsinline autoplay loop muted class="img-fluid mr-0 pr-0">
+        <section id="section1" class="section">
+            <video id="servicesVid" muted data-autoplay loop>
                 <source src="assets/vid/PeopleWorking_loop.mp4">
             </video>
-        </div>
-        <div class="container mt-3">
 
-            <div class="row justify-content-between">
+            <div class="service-icons pt-3 d-flex justify-content-center align-items-center">
+                
+                <div class="row content-wrapper">
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing Development Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Strategic Marketing Development</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services d-flex justify-content-center align-items-center flex-column ">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="service-icon-text align-items-center d-flex justify-content-center">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/brandingandidentity.svg" alt="Branding and Identity Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Branding and Identity</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/creativedirection.svg" alt="Creative Direction Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Creative Direction</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/contentstrategy.svg" alt="Content Strategy Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Content Strategy</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/contentdevelopemnt.svg" alt="Content Development Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Content Development</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                </div> <!-- End Row Icons 1 -->  
             </div>
 
-            <div class="row justify-content-between">
+            <div class="service-icons pt-3 d-flex justify-content-center align-items-center">
+                
+                <div class="row content-wrapper">
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/editorialstrategy.svg" alt="Editorial Strategy Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Editorial Strategy</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/print.svg" alt="Print Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Print</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/writing.svg" alt="Writing Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Writing</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/editing.svg" alt="Editing Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Editing</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                    <div class="col-lg col-6 d-flex justify-content-center align-items-center py-1">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/img/graphicdesign.svg" alt="Graphic Design Icon">
+                            <div class="card-body">
+                                <h5 class="card-title">Graphic Design</h5>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-2 col-md-6 col-12 services">
-                    <img src="assets/img/strategicmarketingdevelopment.svg" alt="Strategic Marketing" class="img-fluid mx-auto d-block service-icon">
-                    <p class="text-center service-icon-text">Strategic Marketing Development</p>
-                </div>
+                </div> <!-- End Row Icons 2-->  
             </div>
+        </section>
 
-        </div>
+    </div> <!-- End Fullpage.js -->
+    
 
-    </section>
+    
 
-
+    <!-- Fullpage.js JS files -->
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    
     <!-- Jquery, Popper.js, and BootStrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -181,6 +212,7 @@
 
     <!-- Custom Javascript -->
     <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

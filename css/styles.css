@@ -38,9 +38,9 @@ body {
     padding-bottom: 2px;
 }
 
-.navbar-custom {
+/* .navbar-custom {
     background-color: rgba(22, 22, 22, 0.5);
-}
+} */
 
 
 .fa-twitter-square:hover,  
@@ -54,186 +54,47 @@ body {
 
 /** Background Video
  ---------------------------------------------------------*/
-
-
-video#bgvid {
-    display: none;
-}
-
-.mobile-images {
-    position: relative;
-}
-
-.header-image {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-
-#heroVideo {
-    background-color: rgb(23, 23, 23);
-    height: 100vh;
-    position: relative;
+.section {
+    text-align: center;
     overflow: hidden;
 }
 
-.text-overlay {
+ #bgvid {
     position: absolute;
-    top: 0%;
     right: 0;
     bottom: 0;
+    top: 0;
     left: 0;
-    
-
-    flex-direction: column;
-}
-
-.title {
-    font-family: futura-pt-condensed, sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 1.2;
-}
-
-p.lead {
-    font-size: 1.3rem;
-}
-
-.button-heading {
-    font-weight: 600;
-}
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+ }
 
 
-/** Services
+ /** Services
  ---------------------------------------------------------*/
-#ourServices {
-    background-color: #fff;
-}
+.service-icons {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 1rem;
+} 
 
-.embed-responsive #processVid {
-    height: auto;
-    overflow: hidden;
-}
-
-#processVid {
-    background-color: rgb(34, 34, 34);
-}
-
- #ourServices div.container {
-    max-width: 75rem;
-}
-
-.services {
-    width: 4.5rem;
-}
-
-.service-item {
-    max-width: 5rem;
-}
-
-.service-icon {
-    height: 4.375rem;
+.card {
+    height: 15rem;
     width: auto;
+    border: none;
 }
 
-.service-icon-text {  
-    color: #000;
-    text-transform: uppercase;
-    width: 4rem;
+h5 {
+    color: black;
 }
 
-
-/** Media Queries
- ---------------------------------------------------------*/
-
- /* Small Devices */
-@media (min-width: 576px){
-
-    .title {
-        font-size: 4.5rem;
-    }
-
-    p.lead {
-        font-size: 1.4rem;
-    }
+.content-wrapper {
+    width: 75rem;
+    /* background-color: red; */
 }
-
-
-/* Medium Devices */
-@media (min-width: 768px){
-    .title {
-        font-size: 5rem;
-    }
-
-    .header-image {
-        top: 45%;
-    }
-}
-
-/* Large Devices */
-@media (min-width: 992px){
-    
-    body {
-        /* Might only be needed temporarily, because of background image being used. */
-        background-color: rgb(34, 34, 34);
-    }
-
-    .navbar-nav .active:before {
-        content: "";
-        position: absolute;
-        width: 50%;
-        height: 1px;
-        bottom: 0;
-        left: 25%;
-        border-bottom: 2px solid var(--primary-green);
-    }
-
-    .navbar-custom {
-        background-color: transparent;
-    }
-
-    #heroVideo {
-        background-image: none;
-        background-color: transparent;
-    }
-
-    .header-image {
-        display: none;
-    }
-
-    video#bgvid {
-        position: block;
-        display: block;
-        top: -15%;
-        left: 0%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        overflow: hidden;
-    }
-
-    .text-overlay {
-        top: 20%;
-    }
-}
-
-/* Extra Large Devices */
-@media (min-width: 1200px){
-    .text-overlay {
-        padding-top: 12rem;
-    }
-}
-
-
-/* Drop marketing logo on mobile to top:30 */
-/* On mobile then bring up the overlay a bit higher also to fill void */
-/* Ajust values for other versions */
