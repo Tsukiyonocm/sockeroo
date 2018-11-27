@@ -66,6 +66,13 @@ a:visited {
     overflow: hidden;
 }
 
+#section0 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
  #bgvid {
     position: absolute;
     right: 0;
@@ -83,12 +90,12 @@ a:visited {
  }
 
  .text-overlay {
-     max-width: 37.5rem;
+     width: 100%;
      padding: 2rem;
      position: absolute;
      right: 0;
      bottom: 0;
-     top: 15%;
+     top: 25%;
      left: 0;
 
      display: flex;
@@ -97,10 +104,18 @@ a:visited {
      align-items: center;
  }
 
+
+
  .overlay_header {
     font-family: futura-pt-condensed, sans-serif;
     font-size: 3.75rem;
     text-transform: uppercase;
+ }
+
+ .overlay_text{
+     font-size: 1rem;
+     max-width: 30rem;
+     margin-bottom: 1rem;
  }
 
  .overlay_btn {
@@ -109,7 +124,8 @@ a:visited {
     text-transform: uppercase; 
     letter-spacing: 1.5;
     color: #000;
-    background-color: #fff; 
+    background-color: #fff;
+    margin-top: 1rem; 
  }
 
  /** Services
@@ -136,7 +152,7 @@ h5 {
 
 .content-wrapper {
     width: 75rem;
-    /* background-color: red; */
+    background-color: red;
 }
 
 .services-text {
@@ -241,25 +257,54 @@ h5 {
 
 
 
-// Small devices (landscape phones, 576px and up)
+ /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
+    .text-overlay {
+        top: 20%;
+    }
+   
+    .overlay_header {
+       font-size: 3.75rem;
+    }
+   
+    .overlay_text{
+        font-size: 1rem;
+    }
+   
+    .overlay_btn {
+       font-size: .8rem; 
+    }
 }
 
 
-// Medium devices (tablets, 768px and up)
+/* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
 }
 
 
-// Large devices (desktops, 992px and up)
+/* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+    .text-overlay {
+        top: 15%;
+    }
+   
+    .overlay_header {
+       font-size: 4.75rem;
+    }
+   
+    .overlay_text{
+        font-size: 1.15rem;
+    }
+   
+    .overlay_btn {
+       font-size: 1rem; 
+    }
 }
 
 
-// Extra large devices (large desktops, 1200px and up)
+/* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
 }
