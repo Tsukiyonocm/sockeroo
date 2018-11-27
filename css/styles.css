@@ -12,6 +12,13 @@ body {
     color: #fff;
 }
 
+a,
+a:hover,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 
 /** Navbar
  ---------------------------------------------------------*/
@@ -72,9 +79,38 @@ body {
     background-position: center center;
     background-size: contain;
     object-fit: cover;
-    z-index: 3;
+    z-index: 0;
  }
 
+ .text-overlay {
+     max-width: 37.5rem;
+     padding: 2rem;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     top: 15%;
+     left: 0;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .overlay_header {
+    font-family: futura-pt-condensed, sans-serif;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+ }
+
+ .overlay_btn {
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 1.5;
+    color: #000;
+    background-color: #fff; 
+ }
 
  /** Services
  ---------------------------------------------------------*/
@@ -100,7 +136,7 @@ h5 {
 
 .content-wrapper {
     width: 75rem;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .services-text {
@@ -148,7 +184,18 @@ h5 {
 
   /** Contact
  ---------------------------------------------------------*/
-.social-contact ul {
+
+ .contact-title {
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.social {
+    font-weight: 700;
+}
+
+ .social-contact ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -156,11 +203,63 @@ h5 {
 }
 
 .social-contact ul li {
-    padding: 1rem;
+    padding: 0 1rem;
+}
+
+.btn-sub {
+    letter-spacing: 1.5;
+    color: black;
+    background-color: #fff;
+    font-weight: 700;
+    border-radius: .15rem;
+}
+
+.btn-form {
+    width: 100%;
+    letter-spacing: 1.5;
+    color: black;
+    background-color: #fff;
+    font-weight: 700;
+    border-radius: .15rem;
+}
+
+.form-control {
+    background-color: rgb(46, 46, 46);
+    border: 1px solid white;
+    border-radius: .2rem;
+}
+
+.color2 {
+    /* background-color: blue; */
+}
+
+.fp-scroller {
+    overflow: hidden;
 }
 
 
 
-.color2 {
-    background-color: blue;
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }
