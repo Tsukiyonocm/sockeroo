@@ -19,6 +19,10 @@ a:visited {
     text-decoration: none;
 }
 
+.content-wrapper {
+    width: 75rem;
+}
+
 
 /** Navbar
  ---------------------------------------------------------*/
@@ -44,10 +48,6 @@ a:visited {
     position: relative;
     padding-bottom: 2px;
 }
-
-/* .navbar-custom {
-    background-color: rgba(22, 22, 22, 0.5);
-} */
 
 
 .fa-twitter-square:hover,  
@@ -103,8 +103,6 @@ a:visited {
      align-items: center;
  }
 
-
-
  .overlay_header {
     font-family: futura-pt-condensed, sans-serif;
     font-size: 3.75rem;
@@ -129,22 +127,9 @@ a:visited {
 
  /** Services
  ---------------------------------------------------------*/
-.service-icons {
-    background-color: white;
-    width: 100%;
-    padding-bottom: 1rem;
-}
-
 
 #servicesVid {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-position: center center;
-    background-size: contain;
-    object-fit: cover;
+    height: 100%;
 }
 
 .services_overlay {
@@ -187,27 +172,29 @@ a:visited {
     padding: 0 1rem;
 }
 
-.card {
-    height: 12rem;
-    width: auto;
-    border: none;
-}
-.card-img-top {
-    height: 7rem;
-    width: auto;
+#service-icons {
+    background-color: #fff;
+    padding-top: 5rem;
 }
 
-h5 {
+#service-icons .fp-tablecell {
+    vertical-align: top;
+}
+
+.card {
+    border: none;
+    text-align: center;
+    max-width: 150px;
+    min-width: 150px;
+    height: auto;
     color: black;
 }
 
-.content-wrapper {
-    width: 75rem;
-    background-color: red;
-}
+
 
 .services-text {
     background-color: #fff;
+    margin-top: 3rem;
 }
 
 .services_list {
@@ -295,17 +282,6 @@ h5 {
     border: 1px solid white;
     border-radius: .2rem;
 }
-
-.color2 {
-    /* background-color: blue; */
-}
-
-.fp-scroller {
-    overflow: hidden;
-}
-
-
-
 
 
  /* Small devices (landscape phones, 576px and up) */
