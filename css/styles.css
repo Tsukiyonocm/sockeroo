@@ -1,8 +1,8 @@
 :root {
     --primary-green: rgb(51, 204, 204);
-}
-
-body {
+  }
+  
+  body {
     font-family: futura-pt, sans-serif;
     font-style: normal;
     font-size: 1rem;
@@ -10,69 +10,66 @@ body {
     background-color: rgb(22, 22, 22);
     /* Background color matches video background color so ther is no seam on shrinking screens */
     color: #fff;
-}
-
-a,
-a:hover,
-a:visited {
+  }
+  
+  a,
+  a:hover,
+  a:visited {
     color: white;
     text-decoration: none;
-}
-
-.content-wrapper {
+  }
+  
+  .content-wrapper {
     width: 75rem;
-}
-
-
-/** Navbar
- ---------------------------------------------------------*/
- .navbar-toggler-icon {
+  }
+  
+  /** Navbar
+   ---------------------------------------------------------*/
+  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-nav a,
-.navbar-text {
+  }
+  
+  .navbar-nav a,
+  .navbar-text {
     color: #fff;
     letter-spacing: 1.2;
     text-transform: uppercase;
     font-weight: 500;
-}
-
-.navbar-nav a:hover {
+  }
+  
+  .navbar-nav a:hover {
     color: var(--primary-green);
     transition: color 500ms;
-}
-
-.navbar-nav .active {
+  }
+  
+  .navbar-nav .active {
     color: var(--primary-green);
     position: relative;
     padding-bottom: 2px;
-}
-
-
-.fa-twitter-square:hover,  
-.fa-facebook-square:hover, 
-.fa-linkedin:hover, 
-.fa-instagram:hover {
+  }
+  
+  .fa-twitter-square:hover,
+  .fa-facebook-square:hover,
+  .fa-linkedin:hover,
+  .fa-instagram:hover {
     color: var(--primary-green);
     cursor: pointer;
-}
-
-
-/** Header
- ---------------------------------------------------------*/
-.section {
+  }
+  
+  /** Header
+   ---------------------------------------------------------*/
+  .section {
     text-align: center;
     overflow: hidden;
-}
-
-#section0 {
+  }
+  
+  #heading {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
- #bgvid {
+  }
+  
+  #bgvid {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -86,261 +83,247 @@ a:visited {
     background-size: contain;
     object-fit: cover;
     z-index: 0;
- }
-
- .text-overlay {
-     width: 100%;
-     padding: 2rem;
-     position: absolute;
-     right: 0;
-     bottom: 0;
-     top: 25%;
-     left: 0;
-
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
-
- .overlay_header {
-    font-family: futura-pt-condensed, sans-serif;
-    font-size: 3.75rem;
-    text-transform: uppercase;
- }
-
- .overlay_text{
-     font-size: 1rem;
-     max-width: 30rem;
-     margin-bottom: 1rem;
- }
-
- .overlay_btn {
-    font-size: .8rem;
-    font-weight: 700;
-    text-transform: uppercase; 
-    letter-spacing: 1.5;
-    color: #000;
-    background-color: #fff;
-    margin-top: 1rem; 
- }
-
- /** Services
- ---------------------------------------------------------*/
-
-#servicesVid {
-    height: 100%;
-}
-
-.services_overlay {
-    position: absolute;
+  }
+  
+  .text-overlay {
     width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .3);
-
+    height: 100vh;
+    padding: 2rem;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.services_header {
+  }
+  
+  .overlay_header {
+    font-family: futura-pt-condensed, sans-serif;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+  }
+  
+  .overlay_text {
+    font-size: 1rem;
+    max-width: 30rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overlay_btn {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    color: #000;
+    background-color: #fff;
+    margin-top: 1rem;
+  }
+  
+  /** Services
+   ---------------------------------------------------------*/
+  
+  #services {
+    position: relative;
+  }
+  
+  #servicesVid {
+    height: auto;
+    position: relative;
+  }
+  
+  .services_overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services_header {
     font-size: 3.75rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 3rem;
-}
-
-.quote {
+  }
+  
+  .quote {
     max-width: 45rem;
     padding: 0 1rem;
     margin-bottom: 1.5rem;
-    font-size: 1.30rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-}
-
-.blockquote-footer {
+  }
+  
+  .blockquote-footer {
     color: white;
-}
-
-.services_text {
+  }
+  
+  .services_text {
     max-width: 45rem;
     font-size: 1.1rem;
     padding: 0 1rem;
-}
-
-#service-icons {
+  }
+  
+  #service-icons {
     background-color: #fff;
     padding-top: 5rem;
-}
-
-#service-icons .fp-tablecell {
+  }
+  
+  #service-icons .fp-tablecell {
     vertical-align: top;
-}
-
-.card {
+  }
+  
+  .card {
     border: none;
     text-align: center;
     max-width: 150px;
     min-width: 150px;
     height: auto;
     color: black;
-}
-
-
-
-.services-text {
+  }
+  
+  .services-text {
     background-color: #fff;
     margin-top: 3rem;
-}
-
-.services_list {
+  }
+  
+  .services_list {
     list-style: none;
     font-size: 1.25rem;
     color: black;
-    
-}
-
-.service_lead-container {
+  }
+  
+  .service_lead-container {
     background-color: rgb(51, 204, 204);
-}
-
-.service_points-container {
+  }
+  
+  .service_points-container {
     background-color: #fff;
-}
-
-/** Process
- ---------------------------------------------------------*/
- #processVid {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-color: black;
-    background-position: center center;
-    background-size: contain;
-    object-fit: cover;
-    z-index: 3;
- }
-
-
- /** About Us
- ---------------------------------------------------------*/
-
-
-
-  /** Contact
- ---------------------------------------------------------*/
-
- .contact-title {
-    font-family: futura-pt-condensed, sans-serif;
-    font-weight: 700;
-    padding: 1rem 0;
-}
-
-.social {
-    font-weight: 700;
-}
-
- .social-contact ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-contact ul li {
-    padding: 0 1rem;
-}
-
-.btn-sub {
-    letter-spacing: 1.5;
-    color: black;
-    background-color: #fff;
-    font-weight: 700;
-    border-radius: .15rem;
-}
-
-.btn-form {
-    width: 100%;
-    letter-spacing: 1.5;
-    color: black;
-    background-color: #fff;
-    font-weight: 700;
-    border-radius: .15rem;
-}
-
-.form-control {
-    background-color: rgb(46, 46, 46);
-    border: 1px solid white;
-    border-radius: .2rem;
-}
-
-
- /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
-    /** Header
-    ---------------------------------------------------------*/
-    .text-overlay {
-        top: 20%;
-    }
-   
-    .overlay_text{
-        font-size: 1rem;
-    }
-   
-    .overlay_btn {
-       font-size: .8rem; 
-    }
-
-    /** Services
-    ---------------------------------------------------------*/
-    
-}
-
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-}
-
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    
-    /** Header
-    ---------------------------------------------------------*/
-    .text-overlay {
-        top: 15%;
-    }
-   
-    .overlay_header {
-       font-size: 4.75rem;
-    }
-   
-    .overlay_text{
-        font-size: 1.15rem;
-    }
-   
-    .overlay_btn {
-       font-size: 1rem; 
-    }
-
-    /** Services
-    ---------------------------------------------------------*/
-
-}
-
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
+  }
+  
+  
+  /** Process
+   ---------------------------------------------------------*/
+   #processVid {
+      position: relative;
+      min-width: 100%;
+   }
+  
+   /** About Us
+   ---------------------------------------------------------*/
+  
+  
+  
+    /** Contact
+   ---------------------------------------------------------*/
+  
+   .contact-title {
+      font-family: futura-pt-condensed, sans-serif;
+      font-weight: 700;
+      padding: 1rem 0;
+  }
+  
+  .social {
+      font-weight: 700;
+  }
+  
+   .social-contact ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .social-contact ul li {
+      padding: 0 1rem;
+  }
+  
+  .btn-sub {
+      letter-spacing: 1.5;
+      color: black;
+      background-color: #fff;
+      font-weight: 700;
+      border-radius: .15rem;
+  }
+  
+  .btn-form {
+      width: 100%;
+      letter-spacing: 1.5;
+      color: black;
+      background-color: #fff;
+      font-weight: 700;
+      border-radius: .15rem;
+  }
+  
+  .form-control {
+      background-color: rgb(46, 46, 46);
+      border: 1px solid white;
+      border-radius: .2rem;
+  }
+  
+  
+   /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+  
+      /** Header
+      ---------------------------------------------------------*/
+      .text-overlay {
+          top: 20%;
+      }
+     
+      .overlay_text{
+          font-size: 1rem;
+      }
+     
+      .overlay_btn {
+         font-size: .8rem; 
+      }
+  
+      /** Services
+      ---------------------------------------------------------*/
+      
+  }
+  
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  
+  }
+  
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+      
+      /** Header
+      ---------------------------------------------------------*/
+      .text-overlay {
+          top: 15%;
+      }
+     
+      .overlay_header {
+         font-size: 4.75rem;
+      }
+     
+      .overlay_text{
+          font-size: 1.15rem;
+      }
+     
+      .overlay_btn {
+         font-size: 1rem; 
+      }
+  
+      /** Services
+      ---------------------------------------------------------*/
+  
+  }
+  
+  
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  
+  }
