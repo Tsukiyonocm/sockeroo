@@ -128,7 +128,8 @@ a:visited {
 #servicesVid {
   height: auto;
   position: relative;
-  object-fit: cover;
+  /* object-fit: cover; */
+  background-size: cover;
 }
 
 .services_overlay {
