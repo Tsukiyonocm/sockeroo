@@ -88,12 +88,18 @@ a:visited {
 .text-overlay {
   width: 100%;
   height: 100vh;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.heading-logo {
+  max-height: 25rem;
+  width: auto;
 }
 
 .overlay_header {
@@ -115,7 +121,7 @@ a:visited {
   letter-spacing: 1.5;
   color: #000;
   background-color: #fff;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 /** Services
@@ -347,6 +353,11 @@ a:visited {
 
 /** Contact
 ---------------------------------------------------------*/
+#contactus {
+  color: white;
+  /* max-height: 62.5rem; */
+  /* width: auto; */
+}
 
 .contact-title {
   font-family: futura-pt-condensed, sans-serif;
@@ -354,15 +365,35 @@ a:visited {
   padding: 1rem 0;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.custom-contact {
+  /* max-height: 20rem; */
+}
+
 .social {
   font-weight: 700;
+}
+
+.custom-social {
+  /* max-height: 20rem; */
+  /* width: auto; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .social-contact ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 0;
 }
 
 .social-contact ul li {
@@ -375,6 +406,7 @@ a:visited {
   background-color: #fff;
   font-weight: 700;
   border-radius: 0.15rem;
+  white-space: normal;
 }
 
 .btn-form {
@@ -384,6 +416,10 @@ a:visited {
   background-color: #fff;
   font-weight: 700;
   border-radius: 0.15rem;
+}
+
+form {
+  margin: 0 0.5rem;
 }
 
 .form-control {
@@ -409,6 +445,14 @@ a:visited {
   }
 }
 
+/* Contact form reset for xs sizes */
+@media (max-width: 575px) {
+  .cust-col-12 {
+    flex: initial;
+    max-width: 100%;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   /** Header
@@ -431,6 +475,12 @@ a:visited {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .cust-col-md-6 {
+    -ms-flex: auto;
+    flex: auto;
+    max-width: 100%;
+}
 }
 
 /* // Large devices (desktops, 992px and up) */
