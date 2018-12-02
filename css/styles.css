@@ -262,10 +262,16 @@ a:visited {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  overflow-y: scroll
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 
 .process-item {
-  max-width: 9rem;
+  max-width: 12rem;
   padding-top: 1rem;
   display: flex;
   flex-direction: row;
