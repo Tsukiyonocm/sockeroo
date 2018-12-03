@@ -121,6 +121,7 @@ a:visited {
 
 .heading-logo {
   max-height: 25rem;
+  min-height: 10rem;
   width: auto;
 }
 
@@ -378,8 +379,10 @@ a:visited {
   text-align: center;
 }
 
-.social {
+.social-header {
+  font-size: 1.5rem;
   font-weight: 700;
+  margin: 0;
 }
 
 .custom-social {
@@ -485,7 +488,12 @@ form {
     -ms-flex: auto;
     flex: auto;
     max-width: 100%;
-}
+  }
+
+  .custom-contact {
+    text-align: left;
+    padding-left: .5rem;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -509,10 +517,41 @@ form {
     font-size: 1rem;
   }
 
-  /** Services
+  /** Contact Form
       ---------------------------------------------------------*/
+  
+  .contact-header {
+    text-align: left;
+  }
+
+  .custom-contact {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .contact-info {
+    align-items: start;
+    justify-content: space-between;
+    padding-left: .5rem;
+  }
+
+  .custom-social {
+    align-items: start;
+    justify-content: end;
+    padding-top: 4rem;
+    width: 100%;
+  }
+
+  .social-contact ul li {
+    padding: 0 1.5rem 0 0;
+    margin-top: 0;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  .custom-social {
+    padding-top: 5.3rem;
+  }
 }
