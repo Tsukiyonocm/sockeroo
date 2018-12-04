@@ -733,4 +733,8 @@ form {
   .custom-social {
     padding-top: 5.3rem;
   }
+
+  #processVid {
+    height: 85%;
+  }
 }
