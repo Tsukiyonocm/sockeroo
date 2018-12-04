@@ -163,8 +163,8 @@ a:visited {
 }
 
 #servicesVid {
-  height: 75%;
-  width: 100%;
+  max-height: 100%;
+  min-width: 100%;
   position: relative;
   -o-object-fit: cover;
   object-fit: cover;
@@ -268,18 +268,19 @@ a:visited {
 ---------------------------------------------------------*/
 #process {
   position: relative;
+  height: 100%;
 }
 
 #processVid {
-  height: 110%;
-  width: 100%;
+  max-height: 100%;
+  min-width: 100%;
   position: relative;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 .process_overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 0, 0, 0.3);
   position: absolute;
   top: 0;
   left: 0;
@@ -605,6 +606,16 @@ form {
     height: 65%;
   }
 
+  .service_lead-container:after {
+    content: "";
+    background-color: rgb(51, 204, 204);
+    position: absolute;
+    width: 999em;
+    right: -999em;
+    top: 0;
+    bottom: 0;
+  }
+
   .quote {
     font-size: 1.1rem;
   }
@@ -647,15 +658,6 @@ form {
     padding-left: 0.5rem;
   }
 
-  .service_lead-container:after {
-    content: "";
-    background-color: rgb(51, 204, 204);
-    position: absolute;
-    width: 999em;
-    right: -999em;
-    top: 0;
-    bottom: 0;
-  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -735,6 +737,6 @@ form {
   }
 
   #processVid {
-    height: 85%;
+    height: 25%;
   }
 }
