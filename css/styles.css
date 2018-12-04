@@ -734,12 +734,3 @@ form {
     padding-top: 5.3rem;
   }
 }
-
-
-/* Edge Specific */
-
-@supports (-ms-ime-align: auto) {
-  #bgVid {
-    height: auto;
-  }
-}
