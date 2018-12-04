@@ -230,7 +230,10 @@ a:visited {
   content: "";
   background-color: rgb(51, 204, 204);
   position: absolute;
-  z-index: -1;
+  width: 999em;
+  left: -999em;
+  top: 0;
+  bottom: 0;
 }
 
 .service_points-container {
@@ -493,12 +496,12 @@ form {
   font-size: 1.1rem;
   }
 
-  #service-icons .container {
+  /* #service-icons .container {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
-  }
+  } */
   
   
   
@@ -619,7 +622,15 @@ form {
   }
 
   #processVid {
-    height: 80%;
+    height: 85%;
+  }
+
+  #aboutus {
+    padding: 3rem 0;
+  }
+
+  #contactus {
+    padding: 3rem 0;
   }
 }
 
