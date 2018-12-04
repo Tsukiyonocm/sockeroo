@@ -327,6 +327,9 @@ a:visited {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   overflow-y: scroll;
+
+  -ms-overflow-style: none; 
+  overflow: -moz-scrollbars-none;
 }
 
 ::-webkit-scrollbar {
