@@ -35,7 +35,14 @@ a:visited {
   letter-spacing: 1.2;
   text-transform: uppercase;
   font-weight: 500;
+  text-shadow: 1px 1px 0 #333,
+              -1px -1px 0 #333,
+              1px -1px 0 #333,
+              -1px 1px 0 #333,
+              2px 2px 5px rgba(0, 0, 0, 0.65);
 }
+
+
 
 .navbar-nav a:hover {
   color: var(--primary-green);
@@ -146,13 +153,16 @@ a:visited {
 }
 
 .overlay_btn {
+  background-color: #fff;
+  display: inline-block;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5;
-  color: #000;
-  background-color: #fff;
-  /* margin-top: 1rem; */
+}
+
+a.overlay_btn {
+  color: black;
 }
 
 /** Services
@@ -736,8 +746,16 @@ form {
     padding-top: 5.3rem;
   }
 
+  .services_overlay {
+    bottom: 0;
+  }
+
   #processVid {
     height: 85vh;
+  }
+
+  .process_overlay {
+    bottom: 0;
   }
 
   #servicesVid {
