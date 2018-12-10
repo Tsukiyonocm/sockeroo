@@ -696,8 +696,8 @@ form {
     display: none;
   }
 
-  .services_overlay {
-    bottom: 0;
+  #service-icons {
+    margin-top: -2rem;
   }
 
   .contact-header {
@@ -764,7 +764,9 @@ form {
     padding-top: 5.3rem;
   }
 
-  
+  .services_overlay {
+    bottom: 0;
+  }
 
   #processVid {
     height: 85vh;
