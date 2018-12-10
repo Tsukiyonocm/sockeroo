@@ -617,7 +617,7 @@ form {
   }
 
   #servicesVid {
-    height: 55vh;
+    height: 75vh;
   }
 
   .service_lead-container:after {
@@ -697,7 +697,7 @@ form {
   }
 
   #service-icons {
-    margin-top: -2rem;
+    bottom: .5rem;
   }
 
   .contact-header {
@@ -777,6 +777,6 @@ form {
   }
 
   #servicesVid {
-    height: 60vh;
+    height: 75vh;
   }
 }
