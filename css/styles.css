@@ -742,7 +742,7 @@ form {
   }
 
   .flex-process {
-    overflow-y: none;
+    overflow-y: hidden;
   }
 
   #aboutus {
