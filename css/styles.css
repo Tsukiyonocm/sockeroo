@@ -696,6 +696,10 @@ form {
     display: none;
   }
 
+  .services_overlay {
+    bottom: 0;
+  }
+
   .contact-header {
     text-align: left;
   }
@@ -760,9 +764,7 @@ form {
     padding-top: 5.3rem;
   }
 
-  .services_overlay {
-    bottom: 0;
-  }
+  
 
   #processVid {
     height: 85vh;
