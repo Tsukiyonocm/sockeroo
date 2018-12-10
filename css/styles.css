@@ -173,7 +173,7 @@ a.overlay_btn {
 }
 
 #servicesVid {
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   position: relative;
   -o-object-fit: cover;
@@ -617,7 +617,7 @@ form {
   }
 
   #servicesVid {
-    height: 75vh;
+    height: 60vh;
   }
 
   .service_lead-container:after {
@@ -694,10 +694,6 @@ form {
 
   .service_lead-container:after {
     display: none;
-  }
-
-  #servicesVid {
-    bottom: .5rem;
   }
 
   .contact-header {
@@ -777,6 +773,6 @@ form {
   }
 
   #servicesVid {
-    height: 75vh;
+    height: 65vh;
   }
 }
