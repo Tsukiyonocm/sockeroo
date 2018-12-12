@@ -12,7 +12,7 @@ $("a[href^='#'").on("click", function(e){
 
 let section = document.querySelectorAll(".scroll");
 let sections = {};
-let threshold = 30;
+let threshold = 20;
 
 section.forEach(function(e){
     // console.log(e.id, e.offsetTop);
