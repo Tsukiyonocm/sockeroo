@@ -52,6 +52,8 @@ a:visited {
 
 .navbar-nav .active {
   color: var(--primary-green);
+  border-bottom: 1px solid var(--primary-green);
+  display: inline-block;
   position: relative;
   padding-bottom: 2px;
 }
@@ -163,6 +165,12 @@ a:visited {
 
 a.overlay_btn {
   color: black;
+}
+
+.scroll-down {
+  position: fixed;
+  z-index: 200;
+  top: 90vh;
 }
 
 /** Services
