@@ -170,7 +170,7 @@ a.overlay_btn {
 .scroll-down {
   position: fixed;
   z-index: 200;
-  top: 90vh;
+  top: 85vh;
 }
 
 /** Services
@@ -614,6 +614,10 @@ form {
 
   .text-overlay {
     top: 20%;
+  }
+
+  .scroll-down{
+    bottom: 90vh;
   }
 
   .overlay_text {
